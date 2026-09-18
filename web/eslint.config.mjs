@@ -6,6 +6,13 @@ import storybook from "eslint-plugin-storybook";
 import eslintPluginTailwindcss from "eslint-plugin-tailwindcss";
 
 import nextConfig from "@repo/eslint-config/next";
+import { createRequire } from 'module';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
+var require = createRequire(import.meta.url);
+var module = { exports: {} };
 
 // Restricted import patterns that apply everywhere. Flat config replaces (not
 // merges) a rule that is configured twice, so every block that configures
